@@ -1,0 +1,11 @@
+{
+  "name": "spinks-test-ddr",
+  "version": "1.0.0",
+  "description": "Spinks homepage design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
