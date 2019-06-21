@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
+.header {
+  width: 100%;
+  background-color: aquamarine; }
+  .header img {
+    position: relative;
+    max-width: 100%; }
+  .header h3 {
+    top: 0px;
+    position: absolute;
+    font-family: roboto, sans-serif;
+    font-size: 1em;
+    color: #6b47b3;
+    padding: 0px 25px;
+    text-transform: uppercase;
+    overflow: hidden; }
+  .header .header-line-1 {
+    top: 400px; }
+  .header .header-line-2 {
+    top: 300px; }
+  .header svg {
+    position: absolute;
+    top: 200px; }
+  .header p {
+    font-family: roboto, sans-serif;
+    padding: 30px; }
+  .header a {
+    color: #523688;
+    text-transform: uppercase; }
+
+/*# sourceMappingURL=style.css.map */
