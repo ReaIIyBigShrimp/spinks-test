@@ -40,13 +40,19 @@
       margin: 10px 0px; }
 
 @media (max-width: 768px) {
-  .header .overlay .header-line-top {
-    text-align: center;
-    opacity: 0.75; }
-  .header .overlay .header-line-bottom {
-    text-align: center; }
-  .header .overlay svg {
-    margin: 150px 0px 25px 0px; } }
+  .header {
+    background-position: center center; }
+    .header .overlay .header-line-top {
+      text-align: center;
+      opacity: 0.75;
+      position: relative;
+      top: -16vh; }
+    .header .overlay .header-line-bottom {
+      text-align: center;
+      position: relative;
+      bottom: -10vh; }
+    .header .overlay svg {
+      margin: 150px 0px 25px 0px; } }
 .link {
   position: absolute;
   bottom: 5px;
@@ -57,6 +63,7 @@
     color: #6b47b3; }
   .link a {
     color: #523688;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

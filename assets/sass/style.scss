@@ -68,14 +68,18 @@ $primary-colour: #6b47b3;
 
 @media (max-width: 768px) {
     .header {
+        background-position: center center;
         .overlay {
             .header-line-top {
                 text-align: center;
                 opacity: 0.75;
-                
+                position: relative;
+                top: -16vh;
             }
             .header-line-bottom {
                 text-align: center;
+                position: relative;
+                bottom: -10vh;
             }
             svg {
                 margin: 150px 0px 25px 0px;
@@ -100,5 +104,6 @@ $primary-colour: #6b47b3;
     a {
         color: #523688;
         text-transform: uppercase;
+        cursor: pointer;
     }
 }
