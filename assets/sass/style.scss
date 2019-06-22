@@ -4,17 +4,45 @@ $primary-colour: #6b47b3;
 
 .header {
     // background-image: url("https://picsum.photos/700/400");
-    // background-repeat: no-repeat;
+
     // background-size: 700px;
-    //display: flex;
-    //align-items: center;
+    background: url("../assets/images/bg-head_01.jpg");
+    background-repeat: no-repeat;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    @media (max-width: 500px) {
+        background-position-x: -150px
+    }
+
     width: 100%;
-    background-color: aquamarine;
+
     position: relative;
+    min-height: 100vh;
 
     img {
         max-width: 100%;
         z-index: 20;
+    }
+
+    h3 {
+        font-family: roboto, sans-serif;
+        font-weight: 500;
+        font-size: 2.2vw;
+        color: $primary-colour;
+        text-transform: uppercase;
+        margin: 0;
+
+        @media (max-width: 768px) {
+            font-size: 1.25em
+        }
+
+        span {
+            font-weight: 400;
+        }
     }
 
     .overlay {
@@ -25,22 +53,7 @@ $primary-colour: #6b47b3;
         z-index: 30;
         position: absolute;
 
-        h3 {
-            font-family: roboto, sans-serif;
-            font-weight: 500;
-            font-size: 2.2vw;
-            color: $primary-colour;
-            text-transform: uppercase;
-            margin: 0;
 
-            //margin-bottom: 10px;
-            // overflow: hidden;
-            span {
-                font-weight: 400;
-            }
-        }
-
-        .header-line-top {}
 
         .header-line-bottom {
             font-weight: 400;
@@ -51,6 +64,26 @@ $primary-colour: #6b47b3;
         }
 
     }
+}
+
+@media (max-width: 768px) {
+    .header {
+        .overlay {
+            .header-line-top {
+                text-align: center;
+                opacity: 0.75;
+                
+            }
+            .header-line-bottom {
+                text-align: center;
+            }
+            svg {
+                margin: 150px 0px 25px 0px;
+            }
+        }
+        
+    }
+
 }
 
 .link {

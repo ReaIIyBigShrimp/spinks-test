@@ -1,11 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
 .header {
+  background: url("../assets/images/bg-head_01.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   width: 100%;
-  background-color: aquamarine;
-  position: relative; }
+  position: relative;
+  min-height: 100vh; }
+  @media (max-width: 500px) {
+    .header {
+      background-position-x: -150px; } }
   .header img {
     max-width: 100%;
     z-index: 20; }
+  .header h3 {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-size: 2.2vw;
+    color: #6b47b3;
+    text-transform: uppercase;
+    margin: 0; }
+    @media (max-width: 768px) {
+      .header h3 {
+        font-size: 1.25em; } }
+    .header h3 span {
+      font-weight: 400; }
   .header .overlay {
     min-width: 90%;
     top: 50%;
@@ -13,20 +34,19 @@
     transform: translate(-50%, -50%);
     z-index: 30;
     position: absolute; }
-    .header .overlay h3 {
-      font-family: roboto, sans-serif;
-      font-weight: 500;
-      font-size: 2.2vw;
-      color: #6b47b3;
-      text-transform: uppercase;
-      margin: 0; }
-      .header .overlay h3 span {
-        font-weight: 400; }
     .header .overlay .header-line-bottom {
       font-weight: 400; }
     .header .overlay svg {
       margin: 10px 0px; }
 
+@media (max-width: 768px) {
+  .header .overlay .header-line-top {
+    text-align: center;
+    opacity: 0.75; }
+  .header .overlay .header-line-bottom {
+    text-align: center; }
+  .header .overlay svg {
+    margin: 150px 0px 25px 0px; } }
 .link {
   position: absolute;
   bottom: 5px;
