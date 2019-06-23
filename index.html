@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="Darryl Dolan-Rathmell" />
-        <meta name="description" content="Spinks content page" />
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
-        <!-- AOS -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/3cc6f6d6ae.js"></script>
-    </head>
-    <body>
-        <div class="header">
-            <!-- <img class="pure-img" src="./assets/images/bg-head_01.jpg"> -->
-            <div class="overlay">
-                    <h3 class="header-line-top">Add the finest springs<br> to your products<br><span>and the finest</span></h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1904.6 350.44"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M250.44,346.65V117.41l-79,167.11H132.93L52,117.41V346.65H0V3.75H52L152.19,217.1,250.44,3.75h52v342.9Z"/><path class="cls-1" d="M516.74,346.65V3.75h52v342.9Z"/><path class="cls-1" d="M1465.48,314.38c-21.67,21.67-53,32.27-88.62,32.27h-120.4V3.75h120.4c35.65,0,67,10.59,88.62,32.27,37.08,37.08,34.67,87.16,34.67,136.77S1502.56,277.3,1465.48,314.38Zm-35.64-240.8c-14.44-15.89-33.71-23.11-58.27-23.11h-63.09V299.93h63.09c24.56,0,43.83-7.22,58.27-23.12,17.82-19.74,18.31-56.82,18.31-104S1447.66,93.33,1429.84,73.58Z"/><path class="cls-1" d="M1758.28,4.14a30.17,30.17,0,0,0-22.8,29.09h0c0,12,4.66,20.79,11.88,27.83,9.85-9.42,25.36-14.82,44.73-14.82,27,0,50.35,9.67,71.42,29.56l3.67,3.47,28.11-34-2.94-3A140.17,140.17,0,0,0,1792.09,0,136.21,136.21,0,0,0,1758.28,4.14Z"/><path class="cls-1" d="M1834,160l-46.92-20.31-33.82-14.91c-40.27-17.43-55.41-38.34-63-65.9-4.18,9.28-6.42,23.38-6.42,33.2,0,40,22.73,69.1,69.43,89l47.27,20.85c33.24,14.51,52,24.16,52,53.54,0,30.07-24.55,48.75-64,48.75-31.42,0-63.26-14.33-87.37-39.32l-3.57-3.71L1666.3,297l3,3.12c31.08,32.42,73.16,50.28,118.48,50.28,68.79,0,116.83-40.38,116.83-98.2C1904.6,197.66,1868.89,175,1834,160Z"/><path class="cls-1" d="M961.48.87V213c-18.31-20.76-39.27-38.54-59.22-55.45C850.66,113.77,806.09,76,806.09.87H753.62C753.62,95.34,813,145.63,865.29,190c51.6,43.74,96.16,81.51,96.16,156.64h52.47V.87Z"/><path class="cls-1" d="M753.62,149.05V346.64h52.45V208.16C788.27,192.29,768.44,173.75,753.62,149.05Z"/></g></g></svg>
-                    <h3 class="header-line-bottom">to your business</h3>
-                    
-                    
-            </div>
-            <div class="link">
-                <a onclick="(()=>{document.getElementById('panelAbout').scrollIntoView()})()"><i class="fas fa-2x fa-chevron-down"></i></a>
-            </div>
-            
-            
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Darryl Dolan-Rathmell" />
+    <meta name="description" content="Spinks content page" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3cc6f6d6ae.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <!-- <img class="pure-img" src="./assets/images/bg-head_01.jpg"> -->
+        <div class="overlay">
+            <h3 class="header-line-top">Add the finest springs<br> to your products<br><span>and the finest</span></h3>
+            <svg id="minds" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1904.6 350.4"
+                style="enable-background:new 0 0 1904.6 350.4;" xml:space="preserve">
+                
+                <title>Asset 1</title>
+                <g>
+                    <g id="Layer_1-2">
+                        <path class="st0"
+                            d="M250.4,346.6V117.4l-79,167.1h-38.5L52,117.4v229.2H0V3.8h52l100.2,213.4L250.4,3.8h52v342.9H250.4z" />
+                        <path class="st0" d="M516.7,346.6V3.8h52v342.9H516.7z" />
+                        <path class="st0" d="M1465.5,314.4c-21.7,21.7-53,32.3-88.6,32.3h-120.4V3.8h120.4c35.7,0,67,10.6,88.6,32.3
+			c37.1,37.1,34.7,87.2,34.7,136.8S1502.6,277.3,1465.5,314.4z M1429.8,73.6c-14.4-15.9-33.7-23.1-58.3-23.1h-63.1v249.5h63.1
+			c24.6,0,43.8-7.2,58.3-23.1c17.8-19.7,18.3-56.8,18.3-104S1447.7,93.3,1429.8,73.6z" />
+                        <path class="st0" d="M1758.3,4.1c-13.3,3.4-22.7,15.3-22.8,29.1l0,0c0,12,4.7,20.8,11.9,27.8c9.8-9.4,25.4-14.8,44.7-14.8
+			c27,0,50.3,9.7,71.4,29.6l3.7,3.5l28.1-34l-2.9-3C1866,15.3,1829.8,0,1792.1,0C1780.7,0,1769.3,1.4,1758.3,4.1z" />
+                        <path class="st0" d="M1834,160l-46.9-20.3l-33.8-14.9c-40.3-17.4-55.4-38.3-63-65.9c-4.2,9.3-6.4,23.4-6.4,33.2
+			c0,40,22.7,69.1,69.4,89l47.3,20.9c33.2,14.5,52,24.2,52,53.5c0,30.1-24.6,48.8-64,48.8c-31.4,0-63.3-14.3-87.4-39.3l-3.6-3.7
+			l-31.3,35.8l3,3.1c31.1,32.4,73.2,50.3,118.5,50.3c68.8,0,116.8-40.4,116.8-98.2C1904.6,197.7,1868.9,175,1834,160z" />
+                        <path class="st0" d="M961.5,0.9V213c-18.3-20.8-39.3-38.5-59.2-55.4C850.7,113.8,806.1,76,806.1,0.9h-52.5
+			c0,94.5,59.4,144.8,111.7,189.1c51.6,43.7,96.2,81.5,96.2,156.6h52.5V0.9H961.5z" />
+                        <path class="st0" d="M753.6,149.1v197.6h52.5V208.2C788.3,192.3,768.4,173.8,753.6,149.1z" />
+                    </g>
+                </g>
+            </svg>
+            <h3 class="header-line-bottom">to your business</h3>
+
+
         </div>
-        <div id="panelAbout" class="panel-about">
-            <h2 data-aos="zoom-in" data-aos-delay="100">It’s the quality of our thinking and the ingenuity of our products that truly sets us apart. <br><span>We’ve built our reputation over 178 years. And we haven’t just seen change in that time. We’ve created it, through unparalelled innovation.</span></h2>
-            <a class="panel-btn" data-aos="zoom-in" data-aos-delay="100">About Us <i class="fas fa-chevron-right"></i></a>
+        <div class="link">
+            <a onclick="(()=>{document.getElementById('panelAbout').scrollIntoView()})()"><i
+                    class="fas fa-2x fa-chevron-down"></i></a>
         </div>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
+
+
+    </div>
+    <div id="panelAbout" class="panel-about">
+        <h2 data-aos="zoom-in" data-aos-delay="100">It’s the quality of our thinking and the ingenuity of our products
+            that truly sets us apart. <br><span>We’ve built our reputation over 178 years. And we haven’t just seen
+                change in that time. We’ve created it, through unparalelled innovation.</span></h2>
+        <a class="panel-btn" data-aos="zoom-in" data-aos-delay="100">About Us <i class="fas fa-chevron-right"></i></a>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Vivus (SVG animation) -->
+    <script src="https://cdn.jsdelivr.net/npm/vivus@0.4.4/dist/vivus.min.js"></script>
+    <script>
+        AOS.init();
+
+        let minds = new Vivus('minds', {
+            type: 'delayed',
+            start: 'autostart',
+            duration: 200
+        }, function () {
+            // Background of SVG to white, using CSS class change
+            // $('#svg_bg').addClass("svg-bg");
+            document.getElementById('minds').classList.add('minds-svg-bg');
+        });
+    </script>
+</body>
+
 </html>

@@ -39,8 +39,18 @@ html {
     position: absolute; }
     .header .overlay .header-line-bottom {
       font-weight: 400; }
-    .header .overlay svg {
+    .header .overlay svg, .header .overlay #minds {
       margin: 10px 0px; }
+      .header .overlay svg path, .header .overlay #minds path {
+        fill: none;
+        stroke: #FFFFFF;
+        stroke-width: 4;
+        stroke-miterlimit: 10;
+        -webkit-transition: fill 5s, stroke-width .25s;
+        transition: fill 5s, stroke-width .25s; }
+    .header .overlay .minds-svg-bg path {
+      stroke-width: 0px !important;
+      fill: #fff !important; }
 
 .panel-about {
   background-image: url("../assets/images/squiggle-grey.svg");
