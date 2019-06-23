@@ -7,6 +7,8 @@
         <meta name="description" content="Spinks content page" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <!-- Font Awesome -->
@@ -22,15 +24,18 @@
                     
                     
             </div>
-            <div class="link-container">
-                <div class="link">
-                    <a><i class="fas fa-2x fa-chevron-down"></i></a>
-                </div>
+            <div class="link">
+                <a><i class="fas fa-2x fa-chevron-down"></i></a>
             </div>
             
+            
         </div>
-        <div class="panel about">
-            <h2>It’s the quality of our thinking and the ingenuity of our products that truly sets us apart. We’ve built our reputation over 178 years. And we haven’t just seen change in that time. We’ve created it, through unparalelled innovation. </h2>
+        <div class="panel-about">
+            <h2 data-aos="zoom-in" data-aos-delay="100">It’s the quality of our thinking and the ingenuity of our products that truly sets us apart. <br><span>We’ve built our reputation over 178 years. And we haven’t just seen change in that time. We’ve created it, through unparalelled innovation.</span></h2>
         </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

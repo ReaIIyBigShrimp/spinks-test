@@ -66,6 +66,66 @@ $primary-colour: #6b47b3;
     }
 }
 
+
+
+.panel-about {
+    background-image: url("../assets/images/squiggle-grey.svg");
+    background-repeat: no-repeat;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 800px;
+    max-height: 100vh;
+    overflow: hidden;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        min-width: 100%;
+        position: absolute;
+        opacity: 0.2;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
+
+    h2 {
+        position: absolute;
+        max-width: 700px;
+        padding: 5px;
+
+        color: #424242;
+        font-family: roboto, sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        span {
+            opacity: 0.6;
+        }
+    }
+}
+
+.link {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    i {
+        color: $primary-colour;
+    }
+
+    a {
+        color: #523688;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
     .header {
         background-position: center center;
@@ -87,26 +147,13 @@ $primary-colour: #6b47b3;
                 position: relative;
                 bottom: -10vh;
             }
+        }   
+    }
+
+    .panel-about {
+        h2 {
+            font-size: 1em;
+            padding: 5px 30px;
         }
-        
-    }
-
-}
-
-.link {
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    display: flex;
-    justify-content: center;
-
-    i {
-        color: $primary-colour;
-    }
-
-    a {
-        color: #523688;
-        text-transform: uppercase;
-        cursor: pointer;
     }
 }
