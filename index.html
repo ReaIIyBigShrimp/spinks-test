@@ -25,13 +25,14 @@
                     
             </div>
             <div class="link">
-                <a><i class="fas fa-2x fa-chevron-down"></i></a>
+                <a onclick="(()=>{document.getElementById('panelAbout').scrollIntoView()})()"><i class="fas fa-2x fa-chevron-down"></i></a>
             </div>
             
             
         </div>
-        <div class="panel-about">
+        <div id="panelAbout" class="panel-about">
             <h2 data-aos="zoom-in" data-aos-delay="100">It’s the quality of our thinking and the ingenuity of our products that truly sets us apart. <br><span>We’ve built our reputation over 178 years. And we haven’t just seen change in that time. We’ve created it, through unparalelled innovation.</span></h2>
+            <a class="panel-btn" data-aos="zoom-in" data-aos-delay="100">About Us <i class="fas fa-chevron-right"></i></a>
         </div>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
